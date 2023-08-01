@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #a9d7e9;
+        }
+        #heading {
+            text-align: center;
+            margin: 20px;
+        }
+        p{
+            padding: 15px;
+            margin-left: 200px;
+           
+        }
+
+        #goodvibesform{
+            background:white;
+            background-color:#f3f3f3;
+            margin-top: 40px;
+            margin-bottom: 90px;
+            margin-left: 170px;
+            margin-right: 170PX;
+            padding-left: 66px;
+            padding-top: 22PX;
+            border-radius: 10px;
+
+
+        }
+        .label{
+            float: right;
+        }
+        .time-label{
+            display: flex;
+            margin-bottom: 36px;
+        }
+        .emotions-label{
+            display: flex;
+            margin-bottom: 70px;
+           
+        }
+        .experience-label{
+            display: flex;
+            margin-bottom: 49px;
+            
+        }
+        .field{
+            
+            width: 165px;
+        }
+        
+        table{
+            padding-left: 150px;
+        }
+        td{
+            padding-top: 7px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .btn{
+            font-size: 1em;
+            background-color: #6ba2ce;
+            color: white;
+            border: 0px solid;
+            border-radius: 4px;
+            height: 40px;
+            width: 80px;
+            margin-top: 25px;
+            margin-left: 385px;
+            margin-bottom: 30px;
+        }
+        .btn:hover{
+             background-color: #a9d7e9;
+
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">Good Vibes Form</h1>
+
+    <form id="goodvibesform">
+        <p>Tell us something positive that happened to you today:</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name" class="name-label label">Name</label></td>
+                    <td><input type="text" id="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email" class="email-label label">Email</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your email address"></td>
+                </tr>
+                <tr>
+                    <td><label for="rating" class="rating-label label">On a scale of 1-10, how good was it?</label></td>
+                    <td><input type="number" class="field" id="rating"min="1" max="10"placeholder="Enter a number between 1 and 10"></td>
+                </tr>
+                <tr>
+                    <td><label for="place" class="place-label label">Where did it happen</label></td>
+                    <td><select id="place">
+                        <option value="">Choose Place</option>
+                        <option value="At home">At home</option>
+                        <option value="At work">At work</option>
+                        <option value="Other places">Other places</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="time" class="time-label label">At what time of the day did it happen?</label></td>
+                    <td><input type="radio" name="radio" id="morning">
+                        <label for="morning">Morning</label><br/>
+                        <input type="radio" name="radio" id="afternoon">
+                        <label for="afternoon">Afternoon</label><br/>
+                        <input type="radio" name="radio" id="evening">
+                        <label for="evening">Evening</label><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="emotions" class="emotions-label label">What emotions did you experience?</label></td>
+                    <td>
+                        <input type="checkbox" id="excited">
+                        <label for="excited">Excited</label><br/>
+                        <input type="checkbox" id="humble">
+                        <label for="humble">Humble</label><br/>
+                        <input type="checkbox" id="elated">
+                        <label for="elated">Elated</label><br/>
+                        <input type="checkbox" id="loved">
+                        <label for="loved">Loved</label><br/>
+                        <input type="checkbox" id="enthusiastic">
+                        <label for="enthusiastic">Enthusiastic</label><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="experince" class="experience-label label">Please describe your positive experience</label></td>
+                    <td><textarea name="experince" id="experince" cols="30" rows="4"></textarea></td>
+                </tr>
+
+            </tbody>
+            
+        </table>
+        <button type="submit" class="btn">Submit</button>
+      
+            
+            
+       
+    </form>
+</body>
+</html>
